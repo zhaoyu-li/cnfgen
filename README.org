@@ -1,0 +1,79 @@
+#+LANGUAGE:    en
+#+OPTIONS:     H:2 num:nil toc:nil \n:nil @:t ::t |:t ^:t f:t TeX:t
+
+
+* CNFgen formula generator and tools
+
+
+#+begin_html
+   <a href='https://travis-ci.org/MassimoLauria/cnfgen'>
+       <img
+       src='https://travis-ci.org/MassimoLauria/cnfgen.svg?branch=master'
+       alt='Build Status' />
+   </a>
+   <a href='http://cnfgen.readthedocs.org/en/latest/?badge=latest'>
+       <img
+       src='http://readthedocs.org/projects/cnfgen/badge/?version=latest'
+       alt='Documentation Status' />
+   </a>
+   <a href="https://zenodo.org/badge/latestdoi/6294497">
+       <img 
+       src="https://zenodo.org/badge/6294497.svg" 
+       alt="DOI" />
+   </a>
+#+end_html
+
+  This repository provides the command
+
+  - =cnfgen= formula generator;
+
+  and  the  following  python  script, designed  to  operate  from/to
+  dimacs CNFs:
+  
+  - =cnfshuffle= random shuffler;
+
+  You  can get  a brief  help on  how to  use these  tools by  running
+  =<program_name> --help= from the command line.
+
+  Run =cnfgen --help= to get a list of the implemented formula families.
+  To get  more specific information  on one  class of formula  use the
+  command
+
+  : cnfgen <formula_type> --help
+
+
+** Installation
+   
+   You can install CNFgen from  [[http://pypi.python.org][Python Package Index]], together with all
+   its dependencies, typing either
+
+   : pip3 install [--user] cnfgen
+
+   or
+
+   : python3 -m pip install  [--user] cnfgen
+
+   if =pip3= is  not a program on your path.  Otherwise it is possible
+   to  install  from source,  assuming  the  requirements are  already
+   installed, using
+   
+   : python3 setup.py install [--user]
+
+   The =--user= option allows to install  the package in the user home
+   directory. If you do that please check that the target location for
+   the command line utilities are in your $PATH.
+
+** Resources
+
+   - Webpage of the project at http://massimolauria.net/cnfgen/
+   - Technical documentation https://cnfgen.readthedocs.io/en/latest/
+   - Python Package at https://pypi.org/project/CNFgen/
+   - Github repository https://github.com/MassimoLauria/cnfgen
+   - Zenodo link (DOI) https://zenodo.org/record/3548843
+
+** Contribution 
+
+   Please contribute to the code by sending pull requests. 
+
+
+Copyright 2012-2020 © Massimo Lauria ([[mailto:massimo.lauria@uniroma1.it][massimo.lauria@uniroma1.it]])
